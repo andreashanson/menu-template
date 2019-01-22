@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background-image: url("/static/images/pexels-photo-747964.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+.main-container .header .circle {
+    background-color: rgb(144, 12, 63); /*    199, 0, 57 */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.main-container .main {
+
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: -100%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: top 250ms;
+}
+
+.show-menu {
+    top: 0px;
+}
+
+/*
+transition: transform 1s;
+transform: rotate(90deg);
+*/
+
+.modal .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+.modal .header .cross {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+}
+
+.modal .menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    margin: auto;
+}
+
+.modal .menu-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a:link, a:active, a:visited {
+    color: white;
+    text-decoration: none;
+    font-family: Montserrat;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.RobotoMono {
+    font-family: RobotoMono;
+}
+
+.Montserrat {
+    font-family: Montserrat;
+}
+
+.NatoSans {
+    font-family: NotoSans;
+}
+
+.AmaticSC {
+    font-family: AmaticSC;
+}
